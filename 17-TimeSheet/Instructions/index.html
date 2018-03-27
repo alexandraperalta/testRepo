@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="assets/scripts/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-info">
+                        <div class="card-title">
+                            <h3>Current Employee</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <table id="empGrid" class="table table-striped">
+                                <th><h4>Employee Name</h4></th>
+                                <th><h4>Position</h4></th>
+                                <th><h4>Start Date</h4></th>
+                                <th><h4>Desired Salary</h4></th>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-info text-white mb-3">
+                    <div class="card-header">
+                        <div class="card-title text-white">
+                            <h3>Add Employee</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <form>
+                                <div class="form-group">
+                                    <label for="nameInput">Employee Name</label>
+                                    <input type="text" class="form-control" id="nameInput" placeholder="John Smith">
+                                    <label for="roleInput">Role</label>
+                                    <input type="text" class="form-control" id="roleInput" placeholder="Manager">
+                                    <label for="startDateInput">Start Date</label>
+                                    <input type="date" class="form-control" id="startDateInput" placeholder="mm/dd/yyyy">
+                                    <label for="wageInput">Desired Wage</label>
+                                    <input type="number" class="form-control" id="wageInput" placeholder="$100,000,000">
+
+                                </div>
+
+                            </form>
+                            <button id="add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
